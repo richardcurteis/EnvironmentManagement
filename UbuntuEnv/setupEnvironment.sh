@@ -14,8 +14,8 @@ pipInstall() {
 	pipApps=( setuptools sslyze )
 	for app in "${pipApps[@]}"
 	do
-		echo "\n[*] Installing: $1";
-		/usr/bin/pip install $1 2>&1/dev/null
+		echo "\n[*] Installing: $app";
+		/usr/bin/pip install $app 2>&1/dev/null
 		installSuccess $?
 	done
 }
