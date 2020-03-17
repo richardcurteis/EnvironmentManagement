@@ -22,9 +22,9 @@ pipInstall() {
 
 installSuccess() {
 	if [ $1 -eq 0 ]; then
-    		echo "\n[~] Install Successful: $app"
+    		echo "\n[!] Install Successful: $app"
 	else
-    		echo "\n[!] Install Failed: $app"
+    		echo "\n[X] Install Failed: $app"
 	fi
 }
 
