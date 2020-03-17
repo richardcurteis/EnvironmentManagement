@@ -11,7 +11,7 @@ aptInstall() {
 }
 
 pipInstall() {
-	pipApps=( setuptools sslyze )
+	pipApps=( setuptools sslyze scapy )
 	for app in "${pipApps[@]}"
 	do
 		echo "\n[*] Installing: $app";
