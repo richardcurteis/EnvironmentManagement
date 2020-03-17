@@ -5,7 +5,7 @@ aptInstall() {
 	for app in "${aptApps[@]}"
 	do
 		echo "\n[*] Installing: $app";
-		sudo /usr/bin/apt install $app -y 2>&1/dev/null 
+		/usr/bin/sudo /usr/bin/apt install $app -y 2>&1/dev/null 
 		installSuccess $?
 	done
 }
@@ -30,7 +30,7 @@ installSuccess() {
 
 main() {
 	echo "System Update and Upgrade"
-	sudo apt update && sudo apt upgrade
+	/usr/bin/sudo apt update && sudo apt upgrade
 	installSuccess $?
 	
 	echo "\n[*] Installing 'apt' Tools\n"
