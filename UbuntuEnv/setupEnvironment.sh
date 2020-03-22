@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 aptInstall() {
-	aptApps=(nodejs git net-tools nmap unattended-upgrades zsh libpam-pwquality python-pip curl sqlmap default-jre openjdk-11-jre-headless openjdk-8-jre-headless golang-go gccgo-go ruby php7.2-cli hhvm )
+	aptApps=( terminator tmux nodejs git net-tools nmap unattended-upgrades zsh libpam-pwquality python-pip curl sqlmap default-jre openjdk-11-jre-headless openjdk-8-jre-headless golang-go gccgo-go ruby php7.2-cli hhvm )
 	for app in "${aptApps[@]}"
 	do
 		echo "\n[*] Installing: $app";
