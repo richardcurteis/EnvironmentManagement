@@ -6,7 +6,7 @@ aptInstall() {
 	do
 		echo "\n[*] Installing: $app";
 		/usr/bin/sudo /usr/bin/apt install $app -y 2>&1/dev/null 
-		installSuccess $?
+		installSuccess $? $app
 	done
 }
 
@@ -16,22 +16,22 @@ pipInstall() {
 	do
 		echo "\n[*] Installing: $app";
 		/usr/bin/pip install $app 2>&1/dev/null
-		installSuccess $?
+		installSuccess $? $app
 	done
 }
 
 installSuccess() {
 	if [ $1 -eq 0 ]; then
-    		echo "\n[!] Install Successful: $app"
+    		echo "\n[!] Install Successful: $2"
 	else
-    		echo "\n[X] Install Failed: $app"
+    		echo "\n[X] Install Failed: $2"
 	fi
 }
 
 main() {
 	echo "System Update and Upgrade"
 	/usr/bin/sudo apt update && sudo apt upgrade
-	installSuccess $?
+	installSuccess $? "System Upgrades and Updates"
 	
 	echo "\n[*] Installing 'apt' Tools\n"
 	aptInstall()
