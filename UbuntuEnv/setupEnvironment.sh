@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 aptInstall() {
-	aptApps=( terminator tmux nodejs git net-tools nmap unattended-upgrades zsh libpam-pwquality python-pip curl sqlmap default-jre openjdk-11-jre-headless openjdk-8-jre-headless golang-go gccgo-go ruby php7.2-cli hhvm )
+	aptApps=( gobuster terminator tmux nodejs git net-tools nmap unattended-upgrades libpam-pwquality python-pip curl default-jre openjdk-11-jre-headless openjdk-8-jre-headless golang-go gccgo-go ruby php7.2-cli hhvm )
 	for app in "${aptApps[@]}"
 	do
 		echo "\n[*] Installing: $app";
@@ -31,7 +31,6 @@ gitPull() {
 		https://github.com/g0tmi1k/debian-ssh.git,
 		https://github.com/BC-SECURITY/Empire.git,
 		https://github.com/Hackplayers/evil-winrm.git,
-		https://github.com/OJ/gobuster.git,
 		https://github.com/SecureAuthCorp/impacket.git,
 		https://github.com/magnumripper/JohnTheRipper.git,
 		https://github.com/04x/JoomBrute.git,
