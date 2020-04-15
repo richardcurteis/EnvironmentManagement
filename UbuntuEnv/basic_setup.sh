@@ -11,11 +11,11 @@ aptInstall() {
 }
 
 pipInstall() {
-	pipApps=( Flask )
+	pipApps=( flask )
 	for app in "${pipApps[@]}"
 	do
 		echo "[*] Installing: $app";
-		/usr/bin/pip install $app 2> /dev/null
+		/usr/bin/pip3 install $app 2> /dev/null
 		installSuccess $? $app
 	done
 }
