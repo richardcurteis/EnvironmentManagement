@@ -29,6 +29,7 @@ installSuccess() {
 }
 
 config_git() {
+	source ~/.bash_profile
 	git config --global user.name "$GITUSER"
 	git config --global user.email "$GITEMAIL"
 }
