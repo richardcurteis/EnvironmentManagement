@@ -42,7 +42,7 @@ main() {
 	echo "[*] Installing 'apt' Tools"
 	aptInstall
 
-	echo "[*] Installing 'pip' Tools"
+	echo "[*] Installing 'pip3' Tools"
 	pipInstall
 	
 	config_git
