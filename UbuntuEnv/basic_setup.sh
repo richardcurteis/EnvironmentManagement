@@ -35,7 +35,7 @@ config_git() {
 
 main() {
 	echo "System Update and Upgrade"
-	/usr/bin/sudo apt-get update && sudo apt-get upgrade
+	/usr/bin/sudo apt-get update -y && sudo apt-get upgrade -y
 	installSuccess $? "System Upgrades and Updates"
 	
 	echo "[*] Installing 'apt' Tools"
