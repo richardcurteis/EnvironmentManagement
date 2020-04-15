@@ -28,6 +28,11 @@ installSuccess() {
 	fi
 }
 
+config_git() {
+	git config --global user.name "$GITUSER"
+	git config --global user.email "$GIT_EMAIL"
+}
+
 main() {
 	echo "System Update and Upgrade"
 	/usr/bin/sudo apt-get update && sudo apt-get upgrade
@@ -38,6 +43,8 @@ main() {
 
 	echo "[*] Installing 'pip' Tools"
 	pipInstall
+	
+	config_git
 }
 
 main
