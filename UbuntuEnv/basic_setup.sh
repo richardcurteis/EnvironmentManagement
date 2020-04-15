@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 aptInstall() {
-	aptApps=( openssh-server terminator nodejs git net-tools nmap unattended-upgrades libpam-pwquality python3 python3-pip curl default-jre openjdk-11-jre-headless openjdk-8-jre-headless hhvm )
+	aptApps=( unzip openssh-server terminator nodejs git net-tools nmap unattended-upgrades libpam-pwquality python3 python3-pip curl default-jre openjdk-11-jre-headless openjdk-8-jre-headless hhvm )
 	for app in "${aptApps[@]}"
 	do
 		echo "[*] Installing: $app";
