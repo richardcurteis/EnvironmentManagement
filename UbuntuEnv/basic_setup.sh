@@ -30,7 +30,7 @@ installSuccess() {
 
 config_git() {
 	git config --global user.name "$GITUSER"
-	git config --global user.email "$GIT_EMAIL"
+	git config --global user.email "$GITEMAIL"
 }
 
 main() {
