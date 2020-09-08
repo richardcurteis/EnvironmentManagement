@@ -32,7 +32,6 @@ gitPull() {
                 https://github.com/SecureAuthCorp/impacket.git
                 https://github.com/magnumripper/JohnTheRipper.git
                 https://github.com/04x/JoomBrute.git
-                https://github.com/bkimminich/juice-shop.git
                 https://github.com/ohpe/juicy-potato.git
                 https://github.com/rebootuser/LinEnum.git
                 https://github.com/mzet-/linux-exploit-suggester.git
