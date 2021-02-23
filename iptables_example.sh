@@ -2,7 +2,7 @@
 
 if [ -z $1 ]
 then
-  echo "[!] Missing whitelist address. Make sure this is supplied to make sure you don't get locked out"
+  echo "[!] Missing whitelist address. Make sure this is supplied so you don't get locked out."
   exit 1
 fi
 
