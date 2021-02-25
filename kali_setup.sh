@@ -127,6 +127,11 @@ setupCodium() {
 	sudo apt update && sudo apt install codium
 }
 
+getJython() {
+        wget https://repo1.maven.org/maven2/org/python/jython-standalone/2.7.2/jython-standalone-2.7.2.jar
+        sudo mv ./jython-standalone-2.7.2.jar /opt
+}
+
 clearOldInstall() {
         # Remove old binaries
         if [ -d /opt/$1 ] ;then sudo rm -rf /opt/$1 ; fi
@@ -154,6 +159,7 @@ main() {
         echo "[*] Installing 'pip' Tools"
         pipInstall
         gitPull
+        getJython
 }
 
 main
